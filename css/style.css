@@ -1,0 +1,219 @@
+/* Name:Aishwarya Kavalakkal Shaiju
+Email: Akavalakkalshai9570@conestogac.on.ca */
+
+html{
+  font:  20px sans-serif;
+  font-size: 20px;
+}
+
+body {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0.25rem auto;
+  box-shadow: 0 0 0.5rem black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+header,
+footer {
+  background-color: #8b140b;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: white;
+  background: linear-gradient( #ff0f00 /#8b140b);
+}
+
+aside{
+  background-image: url(aside.jpg);
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-variant: small-caps;
+}
+nav {
+  background-color: #ffd7d4;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #8b140b;
+  display: inline-block;
+  font-variant: small-caps;
+  font-weight: 900;
+  font-size: larger;
+}
+
+main h2 {
+  color: #8b140b;
+  font-size: 1.5rem;
+  text-align: center;
+  font-variant: small-caps;
+}
+main p {
+ /*   Paragraph text    */
+  margin: 10px auto;
+}
+
+aside h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+.home > header {
+  grid-area: gridheader;
+}
+.home > nav {
+  grid-area: gridnav;
+}
+.home > main {
+  grid-area: gridmain;
+}
+.home > aside {
+  grid-area: gridaside;
+}
+.home > footer {
+  grid-area: gridfooter;
+}
+
+.home {
+  display: grid;
+  grid-template-areas:
+    "gridheader gridheader gridheader"
+    "gridnav gridnav gridnav"
+    "gridmain gridmain gridaside"
+    "gridfooter gridfooter gridfooter";
+}
+
+.home aside {
+  padding: 0 1rem 1rem 1rem;
+}
+
+
+.main-video {
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('W24Finalexam-Sec10/images/aside.jpg');
+  background-size: cover;
+}
+
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.gift-card-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 5px;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #398037;
+}
+
+
+.home main {
+  padding: 0 0.75rem 0.5rem 0;
+}
+
+
+  .poster-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.poster-table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.poster-table th, .poster-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.poster-table th {
+    background-color: #ff0f00;
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+
+
+  
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .image-gallery {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+}
+
